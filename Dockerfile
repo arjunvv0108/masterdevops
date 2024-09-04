@@ -1,5 +1,7 @@
 FROM ubuntu:latest
 MAINTAINER arjunvv0108@gmail.com
+RUN apt update
+RUN apt install yum -y
 RUN yum install -y httpd \
 zip \
 unzip
