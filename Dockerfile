@@ -1,6 +1,7 @@
 FROM ubuntu:latest
 MAINTAINER arjunvv0108@gmail.com
-RUN apt install -y httpd \
+WORKDIR /root
+RUN apt install -y httpd /root
 zip \
 unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
