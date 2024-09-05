@@ -1,6 +1,5 @@
 FROM ubuntu:latest
 MAINTAINER arjunvv0108@gmail.com
-WORKDIR /opt
 RUN sudo dnf install -y httpd \
 zip \
 unzip
