@@ -1,3 +1,3 @@
-FROM httpd:latest
+FROM httpd:2.4
 MAINTAINER arjunvv0108@gmail.com
 COPY . /usr/local/apache2/htdocs/
