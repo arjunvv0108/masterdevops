@@ -1,0 +1,20 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+   name: Bangalore-city
+spec:
+   replicas: 3
+   selector:      # tells the controller which pods to watch/belong to
+    matchLabels:
+     app: bangalore-devops
+   template:
+      metadata:
+        labels:
+          app: bangalore-devops
+      spec:
+       containers:
+        - name: bangalore-devops
+          image: arjunvv0108/pipeline-demo
+          imagePullPolicy: Always
+          ports:
+          - containerPort: 80
