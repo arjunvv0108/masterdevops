@@ -1,0 +1,13 @@
+---
+- name: Deploy on k8s
+- hosts: node
+  become: true
+  tasks: 
+     - name: delete old deployment
+       command: kubectl delete -f /home/devops/Deployment.yml
+     - name: delete old service
+       command: kubectl delete -f /home/devops/Service.yml
+     - name: create new deployment
+       command: kubectl apply -f /home/devops/Deployment.yml
+     - name: create new service
+       command: kubectl apply -f /home/devops/Service.yml
