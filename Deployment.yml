@@ -14,7 +14,7 @@ spec:
       spec:
        containers:
         - name: bangalore-devops
-          image: arjunvv0108/pipeline-demo
+          image: arjunvv0108/pipeline-demo:Latest
           imagePullPolicy: Always
           ports:
           - containerPort: 80
