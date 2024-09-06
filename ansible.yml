@@ -4,6 +4,8 @@
   become: true
   tasks: 
      - name: create new deployment
+       ignore_errors: yes
        command: kubectl create -f /home/devops/Deployment.yml
      - name: create new service
+       ignore_errors: yes
        command: kubectl create -f /home/devops/Service.yml
