@@ -1,6 +1,6 @@
 ---
 - name: Deploy on k8s
-- hosts: node
+- hosts: all
   become: true
   tasks: 
      - name: delete old deployment
